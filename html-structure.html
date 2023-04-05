@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure</title>
+</head>
+<body>
+    <!-- 시맨틱 태그 -->
+    <!-- 태그의 이름만 보고도 어떠한 위치에 어떠한 역할을 하는지
+         알 수 있도록 하는 태그 -->
+    <header> <!-- 웹 페이지의 서론 부분에 해당 -->
+        <h1>HTML 구조 서론</h1>
+        <nav> <!-- 웹 페이지의 네비게이션 부분에 해당-->
+            <a href="/hello_html.html">Hello html</a>
+            <a href="/element/html-elements.html">Element</a>
+        </nav>
+    </header>
+    <main> <!-- 웹 페이지의 본론 부분에 해당 -->
+        <aside> <!-- 웹 페이지의 좌우측면 영역에 해당 -->
+            <nav>
+                <a href="#1a">1 article</a>   
+                <a href="#2a">2 article</a>
+                <!-- 값이 지정되지 않았다면 #(아이디 나타내는 표현)-->
+            </nav>
+        </aside>
+        <article id="1a"> <!-- 웹 페이지 본론에서 하나의 주제에 해당 -->
+            <h3>1 Article</h3>
+            <section> <!-- 본론의 특정 주제에 대한 단원에 해당 -->
+                <p>One analysis of spending in the race by WisPolitics.com has suggested that over $45 million has been spent in the race in total.</p>
+                <p>While Democrats and experts alike agree that abortion has appeared to be a galvanizing issue for voters, Kelly and outside groups have sought to countermessage by highlighting Protasiewicz’s criminal sentencing record and suggesting she’s soft on crime.</p>
+            </section>
+            <section>
+                <p>Protasiewicz and her challenger, former state Supreme Court Justice Daniel Kelly, were seeking to replace outgoing conservative Justice Patience Roggensack on the court. The Wisconsin Supreme Court has a 4-3 conservative majority, but with Roggensack’s retirement, the partisan lean of the court hung in the balance.</p>
+                <p>Milwaukee County Circuit Court Judge Janet Protasiewicz is projected to win the vacant seat on the Wisconsin Supreme Court, marking the first time in 15 years that the court will have a liberal majority, according to The Associated Press.</p>
+            </section>
+        </article>
+        <article id="2a">
+            <h3>2 Article</h3>
+            <section>
+                <p>One analysis of spending in the race by WisPolitics.com has suggested that over $45 million has been spent in the race in total.</p>
+                <p>While Democrats and experts alike agree that abortion has appeared to be a galvanizing issue for voters, Kelly and outside groups have sought to countermessage by highlighting Protasiewicz’s criminal sentencing record and suggesting she’s soft on crime.</p>
+            </section>
+            <section>
+                <p>The election will have clear consequences for a host of issues in the state, including a contested 1849 abortion ban that offers very limited exceptions, redistricting and even possible challenges to the 2024 election results.</p>
+                <p>Protasiewicz placed first during the February election with 47 percent of the vote while Kelly came in second at 24 percent.</p>
+            </section>
+        </article>
+    </main>
+    <footer> <!-- 웹 페이지의 결론에 해당하는 부분 -->
+        <p>copyright</p>
+    </footer>
+</body>
+</html>
