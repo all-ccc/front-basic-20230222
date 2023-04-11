@@ -277,7 +277,7 @@ a {
 .footer-link li+li::before {
     content: '';
     position: absolute;
-    top: 4px;
+    top: 7px;
     left: 4px;
     width: 1px;
     height: 11px;
