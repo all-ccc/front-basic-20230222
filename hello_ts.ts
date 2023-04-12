@@ -1,25 +1,26 @@
 console.log('Hello Typescript!');
 
 //* 변수 //
-var number: number;
-number = 10;
+var numberVariable: number;
+numberVariable = 10;
 // number = 'string';
 
-let string = 'string';
-// string = 10; -> 처음 들어온 데이터의 타입으로 맞춰짐
+let stringVariable = 'it is a string';
+// stringVariable = 10; -> 처음 들어온 데이터의 타입으로 맞춰짐
 
 //* 함수 //
-const function1 = (arg: number): string /* string -> 반환타입 지정 */ => {
+const function1 = (arg: number): string => {
     return 'string';
-}
+};
+// 변수선언 키워드 변수명 = (매개변수: 타입): 반환타입 => {구현부};
 
 //* 객체 //
 // 객체에 대한 타입 선언
 //! 1. class를 이용 
 class Object1 {
+    // 클래스 프로퍼티를 사전 선언하여야 한다
     prop1: string;
     prop2: number;
-
     constructor(prop1: string, prop2: number) {
         this.prop1 = prop1;
         this.prop2 = prop2;
