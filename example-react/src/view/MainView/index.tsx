@@ -1,6 +1,21 @@
-import NaverInput from "../../component/InputComponent";
-
 import {useRef, useState} from 'react'
+import NaverInput from "../../component/InputComponent";
+import NaverFind from '../../component/FindComponent';
+
+const FIND_LIST = [
+    {
+        title: '비밀번호 찾기',
+        link: 'https://nid.naver.com/user2/help/pwInquiry?lang=ko_KR',
+    },
+    {
+        title: '아이디 찾기',
+        link: 'https://nid.naver.com/user2/help/idInquiry?lang=ko_KR',
+    },
+    {
+        title: '회원가입',
+        link: 'https://nid.naver.com/user2/V2Join?m=agree&lang=ko_KR',
+    }
+];
 
 export default function Main() {
     const formRef = useRef<HTMLFormElement | null>(null);
@@ -61,17 +76,10 @@ export default function Main() {
           </div>
   
           <ul className="find-wrapper">
-            <li>
-              <a className="find-text" href="https://nid.naver.com/user2/help/pwInquiry?lang=ko_KR">비밀번호 찾기</a>
-            </li>
-            <li>
-              <a className="find-text" href="https://nid.naver.com/user2/help/idInquiry?lang=ko_KR">아이디 찾기</a>
-            </li>
-            <li>
-              <a className="find-text" href="https://nid.naver.com/user2/V2Join?m=agree&lang=ko_KR">회원가입</a>
-            </li>
+            {
+                FIND_LIST.map((findItem) => (<NaverFind title={findItem.title} link={findItem.link} />))
+            }
           </ul>
-  
           <div className="banner-wrapper">
             <div className="banner-content">
               <img className="banner-img" src="https://ssl.pstatic.net/melona/libs/1378/1378592/b3b27f5a48c19f04e111_20230331172904409.jpg" />
