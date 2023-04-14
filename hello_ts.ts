@@ -1,7 +1,7 @@
 console.log('Hello Typescript!');
 
 //* 변수 //
-var numberVariable: number;
+let numberVariable: number;
 numberVariable = 10;
 // number = 'string';
 
@@ -50,3 +50,12 @@ interface Object4 {
 }
 const object4: Object3 & Object4 = { prop1: 'prop1', prop2: 2, prop3: 'prop1', prop4: 2 };
 // 객체 타입 2개 합치기 가능
+
+//! 4. enum (열거형 타입)
+enum Fruits {
+    APPLE = '사과',
+    BANANA = '바나나',
+    MELON = '메론'
+}
+const fruit: Fruits = Fruits.APPLE; // Fruits 안에 있는 거 아니면 오류남
+console.log(fruit);
